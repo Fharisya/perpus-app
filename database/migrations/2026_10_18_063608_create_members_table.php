@@ -6,15 +6,12 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('nis_nim')->nullable();
+            $table->string('nis_nim')->unique();
             $table->string('no_hp')->nullable();
             $table->timestamps();
         });

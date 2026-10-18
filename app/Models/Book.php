@@ -17,7 +17,7 @@ class Book extends Model
         'tahun',
         'stok',
     ];
-    
+
     public function loans()
     {
         return $this->hasMany(Loan::class);
