@@ -1,43 +1,35 @@
-
 <script setup>
-import { Link } from '@inertiajs/vue3';
+import { Link } from '@inertiajs/vue3'
 </script>
 
 <template>
     <aside
-        class="min-h-screen w-64 flex-shrink-0 bg-indigo-900 p-4 text-white"
+        class="w-64 bg-gray-800 text-white min-h-screen p-4 flex-shrink-0"
     >
-        <h2 class="mb-4 text-lg font-bold">
+        <h2 class="text-lg font-bold mb-4">
             Perpustakaan Mini
         </h2>
 
         <nav class="space-y-2">
             <Link
                 href="/dashboard"
-                class="block rounded px-3 py-2 hover:bg-indigo-800"
+                class="block hover:text-gray-300"
             >
                 Dashboard
             </Link>
 
             <Link
                 href="/"
-                class="block rounded px-3 py-2 hover:bg-indigo-800"
+                class="block hover:text-gray-300"
             >
                 Beranda
             </Link>
 
             <Link
-                href="/"
-                class="block rounded px-3 py-2 hover:bg-indigo-800"
+                href="/books"
+                class="block hover:text-gray-300"
             >
                 Data Buku
-            </Link>
-
-            <Link
-                href="/"
-                class="block rounded px-3 py-2 hover:bg-indigo-800"
-            >
-                Data Anggota
             </Link>
         </nav>
     </aside>
